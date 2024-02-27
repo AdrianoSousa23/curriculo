@@ -1,0 +1,114 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
+
+.titulo {
+	text-align: center;
+}
+
+.imagem_perfil {
+	height: 225px;
+	width: 225px;
+}
+
+.imagem-email {
+	height: 20px;
+	width: 20px;
+}
+
+.imagem-telefone {
+	height: 20px;
+	width: 20px;
+}
+
+.imagem-niver {
+	height: 20px;
+	width: 20px;
+}
+
+.imagem-linkedin {
+	height: 20px;
+	width: 20px;
+}
+
+.imagem-github {
+	height: 20px;
+	width: 20px;
+}
+
+.container {
+	background-color: #424242;
+	position: absolute;
+	left: 25%;
+	right: 25%;
+}
+
+.infos{
+	flex-basis: 30%; 
+} 
+
+.textos {
+	background-color: white;
+	color: black;
+	width: 225px;
+	font-size: 11px;
+	margin-top: -4px;
+	border-top-left-radius: 3%;
+	border-top-right-radius: 3%;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+	border-top-left-radius: 3%;
+	border-top-right-radius: 3%;
+}
+
+.experiencias {
+	border: 3px solid #00BFFF;
+	padding: 5px;
+	border-radius: 2%;
+}
+
+.formacoes {
+	border: 3px solid #00BFFF;
+	padding: 5px;
+	border-radius: 2%;
+}
+
+.conhecimentos {
+	border: 3px solid #00BFFF;
+	padding: 5px;
+	border-radius: 2%;
+}
+
+.tecnicas {
+	color: black;
+	font-weight: bold;
+}
+
+.idiomas {
+	border: 3px solid #00BFFF;
+	margin-top: 20px;
+}
+
+table {
+	border-collapse: collapse;
+	margin: 10px auto;
+}
+
+th,
+td {
+	padding: 8px;
+	text-align: left;
+}
+
+
+
+

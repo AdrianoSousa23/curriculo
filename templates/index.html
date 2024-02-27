@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Curriculo</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="titulo"><span th:text=${dados.nome}></span></h1>
+		<div class="infos">
+			<img src="imagens/perfil.jpg" alt="minha foto" class="imagem_perfil">
+
+			<div class="textos">
+				<p class="email">
+					<img src="imagens/email.png" alt="email" class="imagem-email">
+					<span th:text=${dados.email}></span>
+				</p>
+				<hr>
+				<p class="email">
+					<img src="imagens/telefone.png" alt="email" class="imagem-telefone">
+					<span th:text=${dados.celular}></span>
+				</p>
+				<hr>
+				<p class="email">
+					<img src="imagens/niver.png" alt="aniversario" class="imagem-niver">
+					<span th:text="${#dates.format(dados.aniversario, 'dd/MM/yyyy')}"></span>
+				</p>
+				<hr>
+				<p class="email">
+					<img src="imagens/linkedin.png" alt="linkedin" class="imagem-linkedin">
+					<span th:text=${dados.linkedin}></span>
+				</p>
+				<hr>
+				<p class="email">
+					<img src="imagens/github.png" alt="github" class="imagem-github">
+					<span th:text=${dados.gitHub}></span>
+				</p>
+
+			</div>
+		</div>
+
+		<div class="experiencias">
+			<h2>Experiências profissionais</h2>
+			<p>
+				<span th:text=${dados.linguagemProgramacao}></span>
+				Auxiliar de Vendas
+				<br> Até 2022
+			</p>
+			<br>
+			<p>
+				Vivo (Telefonica) QA intern
+				<br> desde 2023
+			</p>
+
+		</div>
+
+		<div class="formacoes">
+			<h2>Formação Acadêmica</h2>
+			<p>
+				Formado em tecnologo em radiologia<br>
+				2019
+			</p>
+			<br>
+			<p>
+				Graduando Análise e desenvolvimento -
+				<span th:text=${dados.faculdade}></span>
+				<br> 2022 - 2024
+			</p>
+
+		</div>
+
+		<div class="conhecimentos">
+			<h2>Conhecimentos</h2>
+			<p class="tecnicas">
+				Java
+				Desenvolvimento Web
+				Metodologia ágil
+				Tecnicas de teste de Software
+			</p>
+		</div>
+
+		<div class="idiomas">
+			<h2>Idiomas</h2>
+			<table class="tabela-idiomas">
+				<tr>
+					<th></th>
+					<th>Leitura</th>
+					<th>Escrita</th>
+					<th>Conversação</th>
+				</tr>
+				<tr>
+					<td>Inglês</td>
+					<td>Médio</td>
+					<td>Médio</td>
+					<td>Ruim</td>
+				</tr>
+				<tr>
+					<td>Espanhol</td>
+					<td>Ruim</td>
+					<td>Ruim</td>
+					<td>Ruim</td>
+				</tr>
+				<tr>
+					<td>Japonês</td>
+					<td>Ruim</td>
+					<td>Ruim</td>
+					<td>Ruim</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+</body>
+
+</html>
